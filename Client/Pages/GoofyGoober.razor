@@ -1,0 +1,48 @@
+<!--Andrew Wilhelm-->
+<!--https://sites.google.com/site/profvanselow/programming/languages/c_1/blazor?authuser=0--> 
+<!--HTML   CSS    C#-->
+@page "/goofy"
+
+<h1>Are You A Goofy Goober?</h1>
+
+<p>Well, Are You? </p>
+<p>Has to be Yes or No </p>
+
+<input @bind="InputString "/>
+
+<button class="btn btn-primary" @onclick="DoProcessing">Do it</button>
+
+<p>Your Fate: @OutputString </p>
+
+@code
+
+{
+
+    private string InputString { get; set; }
+
+    private string OutputString { get; set; }
+
+    private void DoProcessing()
+
+    {
+
+        string answer = InputString;
+        string Yes = "Have a pleasent time at home.";
+        string No = "Eternal Damnation";
+        if (answer.StartsWith("y") || answer.StartsWith("Y"))
+        {
+             OutputString = Yes;
+        }
+        else if (answer.StartsWith("n") || answer.StartsWith("N") )
+        {
+            OutputString = No;
+        }   
+        else 
+        {
+            OutputString = "Thats not even close";
+        }
+        
+
+    }
+
+} 
