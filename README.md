@@ -1,5 +1,7 @@
 # Blazor Starter Application
 
+https://lively-cliff-0d679350f.azurestaticapps.net/
+
 ![Blazer](https://user-images.githubusercontent.com/62119560/133715512-90c24d0a-21e6-488f-81b9-890768a0b1de.jpg)
 
 ![IPO Screeny](https://user-images.githubusercontent.com/62119560/134267186-aa969be8-8a74-45c4-82b6-6e8005c9356e.png)
